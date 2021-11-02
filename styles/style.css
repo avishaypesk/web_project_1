@@ -6,21 +6,242 @@
   /* here we've set a maximum page width */
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+/* header section */
 .header {
+  margin: 0;
   height: 100vh;
   min-height: 600px;
-  max-height: 756px;
-  /* parameters for the header section */
+  background: #f2f2f2;
+  display: flex;
+  position: relative;
+  margin-bottom: 100px;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
+.logo_place_header {
+  z-index: 1;
+  height: 31px;
+  width: 154;
+  position: absolute;
+  left: 64px;
+  top: 30px;
+}
+
+.header__title {
+  z-index: 1;
+  width: 730px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  z-index: 1;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  color: #000;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__main-illustration {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 756px;
+  height: 608px;
+}
+
+.header__square {
   height: 568px;
   width: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background: #2f80ed;
 }
+
+/* description section */
+
+.description {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:nth-of-type(3n) {
+  margin-bottom: 0;
+}
+
+.two-columns_span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* digits section */
+
+.digits {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.digits-title {
+  margin-bottom: 20px;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.digits-subtitle {
+  margin-bottom: 60px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.table__heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__text_source {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* feynman section */
+
+.feynman {
+  background: #f2f2f2;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.feynman__title {
+  z-index: 1;
+  width: 800px;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+
+.feynman__subtitle {
+  z-index: 1;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.feynman__link:hover {
+  text-decoration: underline;
+}
+
+.feynman__img {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* kaufman section */
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
@@ -29,3 +250,5 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+/* footer section */
