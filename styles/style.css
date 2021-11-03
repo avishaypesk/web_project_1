@@ -1,15 +1,10 @@
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* header section */
 .header {
   margin: 0;
   height: 100vh;
@@ -80,8 +75,6 @@
   background: #2f80ed;
 }
 
-/* description section */
-
 .description {
   background: #f2f2f2;
   display: flex;
@@ -125,8 +118,6 @@
   font-weight: bold;
 }
 
-/* digits section */
-
 .digits {
   background: #f2f2f2;
   display: flex;
@@ -137,18 +128,39 @@
   width: 100%;
 }
 
-.digits-title {
+.section-title {
   margin-bottom: 20px;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
 }
 
-.digits-subtitle {
+.section-title_theme_dark {
+  z-index: 1;
+  margin: 90px 0 20px;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  width: 60%;
+  text-align: center;
+}
+
+.section-subtitle {
   margin-bottom: 60px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.section-subtitle_theme_dark {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin: 0;
 }
 
 .table {
@@ -160,9 +172,28 @@
   justify-content: space-between;
 }
 
+.table_theme_dark {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 90px;
+  padding: 0;
+}
+
 .table__cell {
   width: 250px;
   margin-bottom: 60px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-top: 80px;
 }
 
 .table__heading {
@@ -173,10 +204,26 @@
   font-weight: bold;
 }
 
+.table__heading_theme_dark {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
 }
 
 .table__text_source {
@@ -185,8 +232,6 @@
   font-size: 18px;
   font-weight: normal;
 }
-
-/* feynman section */
 
 .feynman {
   background: #f2f2f2;
@@ -241,14 +286,97 @@
   left: 0;
 }
 
-/* kaufman section */
-
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.kaufman {
+  background: #1f1f1f;
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* footer section */
+.kaufman__triangle {
+  width: 660px;
+  height: 636px;
+  position: absolute;
+  right: -124px;
+  top: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #1f1f1f;
+  min-height: 350px;
+}
+
+.footer__columns {
+  margin: 60px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 90%;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  height: 35px;
+  width: 183px;
+}
+
+.footer__author {
+  margin: 0;
+  padding: 18px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer__list {
+  height: 40%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
