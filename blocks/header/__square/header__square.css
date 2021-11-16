@@ -1,0 +1,9 @@
+.header__square {
+  z-index: -1;
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background: #2f80ed;
+}
