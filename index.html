@@ -24,7 +24,7 @@
         src="images/header-image.png"
         alt="Illustration"
       />
-      <div class="header__square"></div>
+      <div class="header__square rotation"></div>
     </header>
 
     <main class="content">
@@ -59,6 +59,125 @@
             </p>
           </div>
         </article>
+      </section>
+
+      <section class="techniques">
+        <h2 class="section-title">Learning Techniques</h2>
+        <h3 class="section-subtitle">Five Strategies from Barbara Oakley</h3>
+        <ul class="cards">
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards-attention.png"
+              alt="Book about chaing the way you think"
+            />
+            <h4 class="cards__title">Two Ways of Thinking</h4>
+            <p class="cards__description">
+              Deep understanding comes from being able to toggle back and forth
+              between focused and diffused thinking.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards-recall.png"
+              alt="A statue thinking"
+            />
+            <h4 class="cards__title">Recall</h4>
+            <p class="cards__description">
+              Improving your ability to remember key bits of information helps
+              to connect different parts of the brain.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards-interleaving.png"
+              alt="A crowd of people"
+            />
+            <h4 class="cards__title">Interleaving</h4>
+            <p class="cards__description">
+              When you learn multiple skills at the same time, they reinforce
+              each other.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards-question.png"
+              alt="A man stanting alone in a weird room"
+            />
+            <h4 class="cards__title">Questions</h4>
+            <p class="cards__description">
+              When listening to your teacher, think up a good question,
+              something that you're really itching to know.
+            </p>
+          </li>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards-competence.png"
+              alt="A stack of books"
+            />
+            <h4 class="cards__title">Illusion of Competence</h4>
+            <p class="cards__description">
+              Test yourself, write it down, tell other people, and repeat the
+              process in different settings. Only then can you be truly certain
+              you've understood something.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video">
+        <h2 class="section-title">TED talks</h2>
+        <h3 class="section-subtitle">For lovers of procrastination</h3>
+        <div class="video__iframes">
+          <iframe
+            class="video__iframe"
+            src="https://www.youtube.com/embed/5MgBikgcWnY"
+          ></iframe>
+          <iframe
+            class="video__iframe"
+            src="https://www.youtube.com/embed/arj7oStGLkU"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="oakley">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">Barbara Oakley’s story.</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
+              Math didn't come naturally to Barbara in childhood. She thought of
+              herself as more of a humanities person, and not a brilliant one at
+              that. With an eye to becoming a linguist, after school she
+              enlisted in the army, who sent her to learn Russian. After several
+              years of service, during which she rose to the rank of Captain,
+              Barbara left the army and decided to study engineering. In was
+              during this time that she developed her learning methodology as
+              she was forced to reprogram her brain for a different kind of
+              learning. It turns out that when something doesn't come naturally
+              to you, having to work hard to gain the knowledge that other
+              people may get at first glance gives you a deeper, more
+              comprehensive understanding of the subject matter.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="feynman">
+        <h2 class="feynman__title">The Feynman Technique</h2>
+        <p class="feynman__subtitle">Learn without forgetting</p>
+        <a href="#" class="feynman__link">More →</a>
+        <img
+          class="feynman__img"
+          src="./images/feynman.png"
+          alt="A picture of Richard
+          Feynman, a world-renowned quantum physicist. The Feynman
+          Technique is derived from his studying methods when he was a
+          student at Princeton."
+        />
       </section>
 
       <section class="digits">
@@ -118,18 +237,24 @@
         </ul>
       </section>
 
-      <section class="feynman">
-        <h2 class="feynman__title">The Feynman Technique</h2>
-        <p class="feynman__subtitle">Learn without forgetting</p>
-        <a href="#" class="feynman__link">More →</a>
-        <img
-          class="feynman__img"
-          src="./images/feynman.png"
-          alt="A picture of Richard
-          Feynman, a world-renowned quantum physicist. The Feynman
-          Technique is derived from his studying methods when he was a
-          student at Princeton."
-        />
+      <section class="khan">
+        <div class="khan__container">
+          <h3 class="khan__author">Salman Khan</h3>
+          <h2 class="khan__title">The One World Schoolhouse</h2>
+          <p class="khan__quote">
+            Sal Khan's passion and innovation is transforming learning for
+            millions of students worldwide. The One World Schoolhouse is a
+            must-read for all who are committed to improving education so
+            students everywhere can gain the skills and knowledge to be
+            successful in school, careers and life.
+          </p>
+          <h4 class="khan__quote-author">George Lucas</h4>
+          <h5 class="khan__quote-author-subline">Filmmaker</h5>
+          <div class="khan__book-container">
+            <div class="khan__book-pic"></div>
+            <a href="#" class="khan__buy-link">Buy book →</a>
+          </div>
+        </div>
       </section>
 
       <section class="kaufman">
@@ -140,7 +265,7 @@
           by Josh Kaufman
         </p>
         <img
-          class="kaufman__triangle"
+          class="kaufman__triangle rotation"
           src="./images/kaufman-triangle.svg"
           alt="A big blue triangle, over which Josh
           Kaufman claims ownership"
@@ -208,6 +333,19 @@
       </section>
     </main>
 
+    <section class="resources">
+      <h2 class="section-title">Useful resources</h2>
+      <h3 class="section-subtitle">
+        Further materials on lrearning techniques and hacks.
+      </h3>
+      <div class="resources__logo-zone">
+        <a class="resources__logo resources__logo_teded" href="#"></a>
+        <a class="resources__logo resources__logo_medium" href="#"></a>
+        <a class="resources__logo resources__logo_dezeen" href="#"></a>
+        <a class="resources__logo resources__logo_goodreads" href="#"></a>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
@@ -235,8 +373,8 @@
               src="./images/facebook_white.svg"
             />Facebook</a
           >
-          <a class="footer__column-link" href="#"
-            ><img
+          <a class="footer__column-link" href="#">
+            <img
               alt="Instagram icon"
               class="footer__social-icons"
               src="./images/instagram_white.svg"
